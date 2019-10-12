@@ -27,7 +27,7 @@ Download the BSP source:
 
 ```bash
 $ mkdir yocto-artik && cd $_
-$ repo init -u https://github.com/eunchurn/artik-yocto-bsp-repo -b morty
+$ repo init -u https://github.com/eunchurn/artik710-yocto-bsp-repo -b morty
 $ repo sync
 ```
 
