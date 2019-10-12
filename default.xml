@@ -16,7 +16,7 @@
   <project remote="qt5" revision="morty" name="meta-qt5" path="sources/meta-qt5"/>
   <project remote="xenomai" revision="morty" name="meta-xenomai" path="sources/meta-xenomai"/>
 
-  <project remote="eunchurn" revision="morty" name="artik-bsp-base" path="sources/base">
+  <project remote="eunchurn" revision="morty" name="artik710-bsp-base" path="sources/base">
 	<linkfile dest="README.md" src="README.md"/>
 	<linkfile dest="setup-environment" src="setup-environment"/>
   </project>
