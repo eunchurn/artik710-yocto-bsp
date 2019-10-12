@@ -6,15 +6,27 @@ To get the BSP you need to have `repo` installed and use it as:
 Install the `repo` utility:
 
 ```bash
+$ sudo snap install git-repo
+```
+
+or
+
+```bash
+$ sudo apt install repo
+```
+
+or
+
+```bash
 $ mkdir ~/bin
 $ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 $ chmod a+x ~/bin/repo
+$ PATH=${PATH}:~/bin
 ```
 Download the BSP source:
 
 ```bash
-$ PATH=${PATH}:~/bin
-$ mkdir yocto-artik
+$ mkdir yocto-artik && cd $_
 $ cd yocto-artik
 $ repo init -u https://github.com/eunchurn/artik-yocto-bsp-repo -b morty
 $ repo sync
