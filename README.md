@@ -1,15 +1,15 @@
 YOCTO BSP for Samsung Artik
-=====================
+===========================
+
+## Build Packages
+
+```bash
+$ sudo apt install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat cpio python python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping
+```
 
 To get the BSP you need to have `repo` installed and use it as:
 
 Install the `repo` utility:
-
-```bash
-$ sudo snap install git-repo
-```
-
-or
 
 ```bash
 $ sudo apt install repo
@@ -36,7 +36,7 @@ At the end of the commands you have every metadata you need to start work with.
 To start a simple image build:
 
 ```bash
-$ source ./setup-environment build
+$ MACHINE=artik710 DISTRO=poky source setup-environment build
 $ bitbake core-image-minimal
 ```
 It takes 2 or 3 hours. You can use any directory to host your build.
