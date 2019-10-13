@@ -55,7 +55,7 @@ $ sudo cp Image /media/boot/
 $ sudo cp Image-s5p6818-artik710-raptor-rev00.dtb /media/boot/s5p6818-artik710-raptor-rev00.dtb
 $ sudo cp Image-s5p6818-artik710-raptor-rev01.dtb /media/boot/s5p6818-artik710-raptor-rev01.dtb
 $ sudo cp Image-s5p6818-artik710-raptor-rev03.dtb /media/boot/s5p6818-artik710-raptor-rev03.dtb
-$ cp u-boot.bin /media/boot/
+$ cp ../../../../../sources/meta-artik710/recipes-bsp/u-bootu-boot.bin /media/boot/
 $ cp u-boot-artik710.bin /media/boot/
 ```
 
