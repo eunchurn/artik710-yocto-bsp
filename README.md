@@ -1,5 +1,4 @@
-YOCTO BSP for Samsung Artik
-===========================
+# YOCTO BSP for Samsung Artik
 
 ## Build Packages
 
@@ -58,4 +57,27 @@ $ sudo cp Image-s5p6818-artik710-raptor-rev01.dtb /media/boot/s5p6818-artik710-r
 $ sudo cp Image-s5p6818-artik710-raptor-rev03.dtb /media/boot/s5p6818-artik710-raptor-rev03.dtb
 $ cp u-boot.bin /media/boot/
 $ cp u-boot-artik710.bin /media/boot/
+```
+
+## Copying image to SD-card
+
+- Format SD Card and mount it. (SD-card device find `/dev/sd[X]1/` with running `$ sudo fdisk -l`)
+
+```bash
+$ sudo mkfs.ext4 /dev/sd[X]1
+$ sudo mount /dev/sd[X]1 /mnt
+```
+
+- Copy compiled binaries(`fip-nonsecure.img`, `params.bin`) into a micro sd card.
+  
+```bash
+$ sudo cp fip-nonsecure.img params.bin /mnt
+$ sudo cp ../boot-firmwares-artik710/partmap_emmc.txt /mnt
+$ sudo umount /mnt
+```
+
+- Insert the microSD card into your board and enter u-boot shell during boot countdown
+
+```bash
+# sd_recovery mmc 1:1 48000000 partmap_emmc.txt
 ```
