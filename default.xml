@@ -8,6 +8,7 @@
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
   <remote fetch="https://github.com/LetoThe2nd" name="xenomai"/>
+  <remite fetch="https://github.com/eunchurn" name="eunchurn"/>
 
   <project remote="yocto" revision="morty" name="poky" path="sources/poky"/>
   <project remote="oe" revision="morty" name="meta-openembedded" path="sources/meta-openembedded"/>
@@ -16,7 +17,7 @@
   <project remote="qt5" revision="morty" name="meta-qt5" path="sources/meta-qt5"/>
   <project remote="xenomai" revision="morty" name="meta-xenomai" path="sources/meta-xenomai"/>
 
-  <project remote="koan" revision="morty" name="koan-artik-bsp-base" path="sources/base">
+  <project remote="eunchurn" revision="morty" name="artik-bsp-base" path="sources/base">
 	<linkfile dest="README.md" src="README.md"/>
 	<linkfile dest="setup-environment" src="setup-environment"/>
   </project>
